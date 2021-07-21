@@ -1,0 +1,35 @@
+name: Makefile Output
+on: push
+
+env:
+  WorkDir: '/workspaces/Auto-Pandoc-Template/'
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build docker image
+        run: docker build . --tag local --file .devcontainer/Dockerfile
+      - name: Run docker image
+        run: docker run --name localcontainer --workdir ${{ env.WorkDir }} -d local
+      - name: create workdir
+        run: docker exec -i localcontainer sh -c "mkdir -p ${{ env.WorkDir }}"
+      - name: copy all to container
+        run: docker cp . localcontainer:${{ env.WorkDir }}.
+      - name: prepare output directories
+        run: > 
+          docker exec -i localcontainer sh -c "
+          for d in */; do
+            mkdir -p output/$d
+          done"
+      - name: Create MakeFileList
+        run: docker exec -i localcontainer sh -c "find ./ -name 'Makefile' -type f > MakeFileList.txt"
+      - name: Execute make github-action for all Makefiles
+        run: docker exec -i localcontainer sh -c "while IFS= read -r line; do cd $"{line}"/.. && make BUILDDIR=${{ env.WorkDir }}output github-action; done < MakeFileList.txt"
+      - name: copy output to host
+        run: docker cp localcontainer:${{ env.WorkDir }}output ./output
+      - uses: actions/upload-artifact@master
+        with:
+          name: output
+          path: output
