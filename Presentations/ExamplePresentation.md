@@ -5,11 +5,16 @@ author: Author 1, Author 2
 
 # Title 1
 
+
+
 ## Subtitle 1
+
 
 ## Subtitle 2
 
+
 # Title 2
+
 
 ## Lists
 
@@ -24,8 +29,8 @@ author: Author 1, Author 2
 
 This are example Notes you can write markdown in this
 
-# Warning
-- Do not put this in a '# Title' with a '## Title' will cause formatting problems
+Warning:
+ Do not put this in a '# Title' with a '## Title' will cause formatting problems
 
 :::
 
@@ -73,7 +78,7 @@ public class Migration_20210602114520 : Migration
 
 ::: notes
 
-## Atributes for highlightjs
+Atributes for highlightjs
 
 1. .csharp for the language
 2. data-line-numbers="|4,5,6,7|9-18|11|12-17" for highlighting specific lines 
