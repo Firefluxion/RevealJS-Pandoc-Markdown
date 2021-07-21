@@ -17,7 +17,8 @@ author: Author 1, Author 2
 
 
 ## Lists
-
+- If you press s you can see notes etc
+- if you press esc you can see all the slides
 - Hello
 - Hello World
 - Hello World 2
