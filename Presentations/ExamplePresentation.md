@@ -87,7 +87,8 @@ Atributes for highlightjs
 
 :::
 
-# [Math](https://pandoc.org/MANUAL.html#math)
+
+# Math
 
 Cauchy's integral formula
 
