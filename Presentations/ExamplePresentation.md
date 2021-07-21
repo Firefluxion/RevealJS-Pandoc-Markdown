@@ -86,3 +86,15 @@ Atributes for highlightjs
 3. data-id="code-animation" that it is an animation
 
 :::
+
+# [Math](https://pandoc.org/MANUAL.html#math)
+
+Cauchy's integral formula [@dixon1971brief]
+
+$$
+f(a)=\frac{1}{2πi}∮_γ\frac{f(z)}{z-a}\,dz.
+\tag{1}
+\label{eq:1}
+$$
+
+As seen in equation $\eqref{eq:1}$, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
