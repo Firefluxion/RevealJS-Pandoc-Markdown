@@ -87,7 +87,37 @@ Atributes for highlightjs
 
 :::
 
-## Table
+# Tables
+
+## [Simple Table](https://pandoc.org/MANUAL.html#extension-simple_tables)
+
+  Right     Left     Center     Default
+-------     ------ ----------   -------
+     12     12        12            12
+    123     123       123          123
+      1     1          1             1
+
+Table:  Demonstration of simple table syntax.
+
+
+## [Multiline Table](https://pandoc.org/MANUAL.html#extension-multiline_tables)
+
+-------------------------------------------------------------
+ Centered   Default           Right Left
+  Header    Aligned         Aligned Aligned
+----------- ------- --------------- -------------------------
+   First    row                12.0 Example of a row that
+                                    spans multiple lines.
+
+  Second    row                 5.0 Here's another one. Note
+                                    the blank line between
+                                    rows.
+-------------------------------------------------------------
+
+Table: Here's the caption. It, too, may span
+multiple lines.
+
+## [Grid Table](https://pandoc.org/MANUAL.html#extension-grid_tables)
 
 : Sample grid table.
 
@@ -100,3 +130,13 @@ Atributes for highlightjs
 | Oranges       | $2.10         | - cures scurvy     |
 |               |               | - tasty            |
 +---------------+---------------+--------------------+
+
+## [Pipe Table](https://pandoc.org/MANUAL.html#extension-pipe_tables)
+
+| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|   12  |  12  |    12   |    12  |
+|  123  |  123 |   123   |   123  |
+|    1  |    1 |     1   |     1  |
+
+  : Demonstration of pipe table syntax.
