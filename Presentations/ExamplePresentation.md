@@ -86,3 +86,39 @@ Atributes for highlightjs
 3. data-id="code-animation" that it is an animation
 
 :::
+
+# Tables
+
+## [Simple Table](https://pandoc.org/MANUAL.html#extension-simple_tables)
+
+  Right     Left     Center     Default
+-------     ------ ----------   -------
+     12     12        12            12
+    123     123       123          123
+      1     1          1             1
+
+Table:  Demonstration of simple table syntax.
+
+## [Grid Table](https://pandoc.org/MANUAL.html#extension-grid_tables)
+
+: Sample grid table.
+
++---------------+---------------+--------------------+
+| Fruit         | Price         | Advantages         |
++===============+===============+====================+
+| Bananas       | $1.34         | - built-in wrapper |
+|               |               | - bright color     |
++---------------+---------------+--------------------+
+| Oranges       | $2.10         | - cures scurvy     |
+|               |               | - tasty            |
++---------------+---------------+--------------------+
+
+## [Pipe Table](https://pandoc.org/MANUAL.html#extension-pipe_tables)
+
+| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|   12  |  12  |    12   |    12  |
+|  123  |  123 |   123   |   123  |
+|    1  |    1 |     1   |     1  |
+
+  : Demonstration of pipe table syntax.
