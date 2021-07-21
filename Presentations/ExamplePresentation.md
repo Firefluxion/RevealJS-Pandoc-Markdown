@@ -1,5 +1,5 @@
 ---
-title: Example Präsentation
+title: Example Presentation
 author: Author 1, Author 2
 ---
 
@@ -35,7 +35,7 @@ This are example Notes you can write markdown in this
 
 ::: notes
 
-Images nach diesem muster hinzufügen '\!\[Unterschrift\]\(Path\)'
+Add images like this '\!\[caption\]\(path\)'
 
 :::
 
