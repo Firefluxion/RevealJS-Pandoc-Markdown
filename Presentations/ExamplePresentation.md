@@ -88,13 +88,16 @@ Atributes for highlightjs
 :::
 
 
-## Math
+# Math
 
+## Equation
 Cauchy's integral formula
 
+$$
+f(a)=\frac{1}{2πi}∮_γ\frac{f(z)}{z-a}\,dz.
+\tag{1}
+\label{eq:1}
+$$
+
 As seen in this equation, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-### Test 3
-
-Hello World how do you feel lol
 
