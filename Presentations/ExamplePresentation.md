@@ -88,10 +88,13 @@ Atributes for highlightjs
 :::
 
 
-# Math
-
-## sub because else broke
+## Math
 
 Cauchy's integral formula
 
 As seen in this equation, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+### Test 3
+
+Hello World how do you feel lol
+
