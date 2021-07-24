@@ -86,3 +86,8 @@ Atributes for highlightjs
 3. data-id="code-animation" that it is an animation
 
 :::
+
+## [Tasklists](https://pandoc.org/MANUAL.html#extension-task_lists)
+
+- [ ] an unchecked task list item
+- [x] checked item
