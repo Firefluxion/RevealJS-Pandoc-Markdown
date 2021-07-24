@@ -89,5 +89,5 @@ Atributes for highlightjs
 
 ## [Tasklists](https://pandoc.org/MANUAL.html#extension-task_lists)
 
-- [ ] an unchecked task list item
-- [x] checked item
+[ ] an unchecked task list item
+[x] checked item
